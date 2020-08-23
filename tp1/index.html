@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>tp1</title>
+</head>
+<body>  
+    <div class="container">
+        <h1> Formulario</h1>
+        <form  action="" method="" >
+            <div class="form-group ">
+                <label for="ctrl-nombre"><h6>Nombre:*</h6></label>
+                <input type="text" class="form-control" onkeypress="return checkLength(this)" id="ctrl-nombre" name="name" placeholder="Ingrese su nombre" required />
+                <div id="namep"></div>
+            </div>
+            <div class="form-group"> 
+                <label for="ctrl-apellido"><h6>Apellido:*</h6></label>
+                <input type="text" maxlength="20" class="form-control" id="ctrl-apellido" name="lastName" placeholder="Ingrese su apellido" required/>
+            </div>
+            <div class="form-group"> 
+                <label for="ctrl-apellido"><h6>Edad:</h6></label>
+                <input type="number" class="form-control" id="ctrl-age" name="age" placeholder="Ingrese su edad"/>
+            </div>
+            <div class="form-group">
+                <label for="password"><h6>Contraseña:* </h6> 
+                    <input type="password" class="form-control" name="pass" id="password" placeholder="Ingrese una contraseña" required/>
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="email"><h6>Email:* </h6> 
+                    <input type="email" class="form-control" name="mail" id="email" placeholder="ejemplo@gmail.com" required/>
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+    <script src="myScript.js"></script>
+</body>
+</html>

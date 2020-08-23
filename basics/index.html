@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="myScript.js"></script>
+    <title>Basics JS</title>
+</head>
+<body onload="Bienvenidos al himalaya!">
+        <p id="demo"></p>
+
+        <button type="button" onclick="myFunction()">Deci hola gato.</button>
+        <br>
+        <script>
+            var int_value = parseInt("123");
+            var z = 10;
+            document.getElementById("demo").innerHTML = "El valor de z es de: "+z+".";
+
+            function myFunction()
+            {
+                document.getElementById("demo").innerHTML = "Hola gente.";
+            }
+            var a = "Geogie 23";
+           // document.write("Hola soy Georgie programando papa. \n");
+            //document.write(a);
+            console.log("que onda con esto?");
+
+        </script>
+       
+       <p>hola soy un Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur obcaecati fuga ratione quaerat eum aut quasi maxime accusamus, cumque quod tempora maiores, deserunt velit et architecto sapiente perspiciatis. Distinctio, eligendi?</p>
+       <button type="button" onclick="document.getElementById('demo').innerHTML ='aber q pasa'">aber</button>
+       <button type="button" onclick="window.alert('Mira mama una ventana de alerta!!')">alerta</button>
+
+       <script>
+        function myFunction1() {
+            alert("Function one!")                
+        }
+        function myFunctionPa() {
+            document.getElementById('pe').innerHTML = 'Mentira, esto es una bazofia. xD';               
+        }
+        function myFunction2() {
+            console.log("Function TWO!");                
+        }            
+    </script>
+
+    <p id="pe" onmouseover="myFunctionPa()">I love JavaScript!! Best language ever!!</p>
+
+    <form onsubmit="myFunction1()" onreset="myFunction2()">
+        KeyUp: <input type="text" name="a" onkeyup="myFunction1()"/>
+        <br><br>
+        Change: <input type="text" name="b" onchange="myFunction1()"/>
+        <br><br>
+        Select: <input type="text" name="c" onselect="myFunction1()"/>
+        <br><br>
+        Focus: <input type="text" name="d" onfocus="myFunction2()"/>
+        <br><br>
+        Blur: <input type="text" name="d" onblur="myFunction2()"/>
+        <br><br>
+        <button type="button" onclick="myFunction1()">Click</button> 
+        <button type="submit">Submit</button> 
+        <button type="reset">Reset</button>            
+        <br><br>
+        <span>This is a span with an onclick event bound to a function</span>
+        <div id="myDiv">This div has a onclick function bound to it</div>
+    </form>      
+    <script>
+        document.getElementById("myDiv").onclick = myFunction1;
+
+        var element = document.getElementsByTagName('span')[0];
+        element.addEventListener('click', myFunction1, false);
+    </script> 
+</body>
+</html>
