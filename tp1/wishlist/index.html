@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a820c1f4b4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Wishlist</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Products</h1>
+        <div class="">
+            <table class="table table-hover table-dark">
+                <thead>
+                <tr>
+                    <th scope="col">Sku</th>
+                    <th scope="col">Product-Name</th>
+                    <th scope="col">Action</th>
+                </tr>
+                </thead>
+                <tbody id="tbody">
+              
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h2>Add Product</h2>
+            <form  action="" method="" >
+                <div class="form-group"> 
+                    <label for="ctrl-sku"><h6>Sku:*</h6></label>
+                    <input type="number" class="form-control" id="ctrl-sku" name="sku" placeholder="Codigo Sku" required/>
+                </div>
+                <div class="form-group"> 
+                    <label for="ctrl-name"><h6>Product-Name:*</h6></label>
+                    <input type="text" maxlength="20" class="form-control" id="ctrl-name" name="" placeholder="Nombre del producto" required/>
+                </div>
+                <a  id="submit" onclick="addProduct()" class="btn btn-success">Add</a>
+            </form>
+        </div>
+    </div>
+    <script src="myScript.js"></script>
+</body>
+</html>
